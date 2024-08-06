@@ -13,7 +13,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://127.0.0.1:8000/contact', formData)
+    axios.post('http://localhost:8000/contact', formData)
       .then(response => {
         setResponseMessage(response.data.message);  // Set the server response message
         console.log(response);

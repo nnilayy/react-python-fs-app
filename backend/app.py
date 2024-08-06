@@ -27,4 +27,4 @@ async def receive_contact(form_data: ContactForm):
 # Optional: Run the server with uvicorn if this file is executed as the main script
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, port=8000)

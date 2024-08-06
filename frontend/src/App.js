@@ -13,9 +13,9 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:8000/contact', formData)
+    axios.post('https://react-python-fs-app.onrender.com/contact', formData)
       .then(response => {
-        setResponseMessage(response.data.message);  // Set the server response message
+        setResponseMessage(reponse.data.message);  // Set the server response message
         console.log(response);
       })
       .catch(error => {

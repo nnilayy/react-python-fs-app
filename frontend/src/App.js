@@ -13,7 +13,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://e952b2e4-2406-4e4b-9e16-23b61833e1f8.e1-us-cdp-2.choreoapps.dev/contact', formData)
+    axios.post('https://react-python-fs-app.vercel.app/contact', formData)
       .then(response => {
         setResponseMessage(response.data.message);  // Set the server response message
         console.log(response);

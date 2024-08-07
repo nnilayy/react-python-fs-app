@@ -18,6 +18,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    return {"message": "Hello, World!"}
+
 @app.post("/contact")
 async def receive_contact(form_data: ContactForm):
     print(f"Received message from {form_data.name}, Email: {form_data.email}, Message: {form_data.message}")

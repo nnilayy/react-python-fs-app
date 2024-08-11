@@ -18,4 +18,4 @@ endpoints:
     schemaFilePath: openapi.yaml
 
     # represents context relevant to the service
-    context: /rs
+    context: /contact
